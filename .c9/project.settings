@@ -5,6 +5,9 @@
     "instance": {
         "@automaticShutdown": "30"
     },
+    "javascript": {
+        "@formatOnSave": true
+    },
     "language": {
         "tern_defs": {
             "json()": {
