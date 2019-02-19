@@ -78,3 +78,48 @@ SHOW        /dogs/:id       GET         Shows info about one dog
 
 * Add sidebar to show page
 * Display comments nicely
+
+# Finish Styling Show Page
+
+* Add public directory
+* Add custom stylesheet
+
+# Auth Pt. 1 - Add User Model
+
+* Install all packages needed for auth
+* Define User Model 
+
+# Auth Pt. 2 - Register
+
+* Configure Passport
+* Add register routes
+* Add register templates
+
+# Auth Pt. 3 - Login
+
+* Add Login Routes
+* Add Login Template
+
+# Auth Pt. 4 - Logout/Navbar
+
+* Add logout Route
+* Prevent user from adding a comment if not signed in
+* Add links to navbar
+
+# Auth Pt. 5 - Show/Hide Links
+
+* Show / Hide auth links correctly
+
+# Refractor the Routes
+
+* Use Express router to recognize all routes
+
+# Users + Comments
+
+* Associate users and comments
+* Save author's name to a comment automatically
+
+# Users + Campgrounds
+
+* Prevent an unauthenticated user from creating a campground
+* Save username + id to newly created campground.

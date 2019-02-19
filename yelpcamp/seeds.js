@@ -26,30 +26,30 @@ function seedDB() {
         if(err)
             console.log(err);
         
-        else {
-            data.forEach(function(seed) {
-                Campground.create(seed, function(err, campground) {
-                    if(err) 
-                        console.log(err);
+        // else {
+        //     data.forEach(function(seed) {
+        //         Campground.create(seed, function(err, campground) {
+        //             if(err) 
+        //                 console.log(err);
         
-                    else {
-                        Comment.create({
-                            text: "This place is great",
-                            author: "Homer" 
-                        }, function(err, comment) {
-                            if(err)
-                                console.log(err);
+        //             else {
+        //                 Comment.create({
+        //                     text: "This place is great",
+        //                     author: "Homer" 
+        //                 }, function(err, comment) {
+        //                     if(err)
+        //                         console.log(err);
                             
-                            else {
-                                campground.comments.push(comment);
-                                campground.save();
-                                console.log("Created new comment");
-                            } 
-                        }) 
-                    }
-                })
-            });
-        }
+        //                     else {
+        //                         campground.comments.push(comment);
+        //                         campground.save();
+        //                         console.log("Created new comment");
+        //                     } 
+        //                 }) 
+        //             }
+        //         })
+        //     });
+        // }
     })
     
 }
